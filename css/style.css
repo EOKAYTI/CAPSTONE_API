@@ -2,22 +2,22 @@
   font-family: "Roboto", sans-serif;
 }
 
-header .header_content {
+header nav.navbar .container-fluid .navbar-collapse ul li {
+  margin: 0 30px;
+}
+header nav.navbar .container-fluid .navbar-collapse ul li a {
+  font-size: 20px;
+}
+header nav.navbar .container-fluid .navbar-collapse ul li.nav_group {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-header .header_content nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
+  margin-left: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  height: 30px;
 }
-header .header_content nav ul li a {
-  padding: 0 15px;
-  margin: 0 50px;
-  text-decoration: none;
-  color: black;
-}
+
 .slider .carousel-inner .carousel-item {
   height: 60vh;
 }
@@ -48,10 +48,15 @@ header .header_content nav ul li a {
   flex-wrap: wrap;
   border: solid 1px #f0eeee;
   border-radius: 12px;
+  margin-bottom: 10px;
 }
 .product .product_item .product_img img {
   width: 100%;
 }
+.product .product_item .product_content .product_price {
+  font-weight: bold;
+}
+
 .banner {
   background-image: url("./../img/banner_1.webp");
   background-repeat: no-repeat;
@@ -60,7 +65,39 @@ header .header_content nav ul li a {
   height: 50vh;
 }
 
+footer {
+  margin: 50px 0;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer_contact nav ul li a i {
+  padding-right: 15px;
+}
 footer .footer_right {
   display: flex;
-  justify-content: space-evenly;
-} /*# sourceMappingURL=style.css.map */
+  justify-content: space-around;
+}
+footer .footer_right .footer_about li {
+  margin: 20px 0;
+}
+footer .footer_right .footer_about li a {
+  transition: all 0.5s;
+}
+footer .footer_right .footer_about li a:hover {
+  color: #0a58ca;
+}
+footer .footer_right .footer_support li {
+  margin: 20px 0;
+}
+footer .footer_right .footer_support li a {
+  transition: all 0.5s;
+}
+footer .footer_right .footer_support li a:hover {
+  color: #0a58ca;
+}/*# sourceMappingURL=style.css.map */

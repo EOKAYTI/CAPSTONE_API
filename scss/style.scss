@@ -2,30 +2,38 @@
   font-family: "Roboto", sans-serif;
 }
 $fs-color-word: black;
+
+//--------HEADER--------
+
 //--------HEADER--------
 header {
-  .header_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo {
-    }
-    nav {
-      ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        li {
-          a {
-            padding: 0 15px;
-            margin: 0 50px;
-            text-decoration: none;
-            color: $fs-color-word;
+  nav.navbar {
+    .container-fluid {
+      .navbar-brand {
+      }
+      button {
+      }
+      .navbar-collapse {
+        ul {
+          li {
+            margin: 0 30px;
+            a {
+              font-size: 20px;
+            }
+          }
+          li.nav_group {
+            display: flex;
+            align-items: center;
+            a.bar {
+              margin-left: 15px;
+              border-left: 1px solid rgba(0, 0, 0, 0.1);
+              height: 30px;
+              //   position: relative;
+              //   vertical-align: middle;
+            }
           }
         }
       }
-    }
-    .header_group_icon {
     }
   }
 }
@@ -70,6 +78,7 @@ header {
       flex-wrap: wrap;
       border: solid 1px #f0eeee;
       border-radius: 12px;
+      margin-bottom: 10px;
       img {
         width: 100%;
       }
@@ -81,6 +90,7 @@ header {
       p {
       }
       .product_price {
+        font-weight: bold;
       }
     }
   }
@@ -97,14 +107,54 @@ header {
 
 // --------FOOTER--------
 footer {
+  margin: 50px 0;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+  }
+  a {
+    text-decoration: none;
+    color: $fs-color-word;
+  }
   .footer_contact {
+    nav {
+      ul {
+        li {
+          a {
+            i {
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
   }
   .footer_right {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     .footer_about {
+      li {
+        margin: 20px 0;
+        a {
+          transition: all 0.5s;
+          &:hover {
+            color: #0a58ca;
+          }
+        }
+      }
     }
     .footer_support {
+      li {
+        margin: 20px 0;
+        a {
+          transition: all 0.5s;
+          &:hover {
+            color: #0a58ca;
+          }
+        }
+      }
     }
   }
 }
