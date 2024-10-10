@@ -46,9 +46,9 @@ function renderDataProduct(arr) {
                 <img src=${image} alt="" />
             </div>
             <div class="product_content">
-                <h6>${name}</h6>
-                <p>${size}</p>
+                <h6 id="tenSanPham">${name}</h6>
                 <p class="product_price">${price} $</p>
+                <a href="./../html/detail.html" onclick="getProductById(${id})">Xem chi tiết</a>
             </div>
         </div>
     </div>
@@ -56,3 +56,23 @@ function renderDataProduct(arr) {
   }
   document.getElementById("add").innerHTML = content;
 }
+
+// // SẢN PHẨM BẰNG ID
+// function getProductById(id) {
+//   let promise = axios({
+//     // url : Request URLs
+//     url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${id}`,
+//     // method : Phương thức (GET - POST - PUT - DELETE)
+//     method: "GET",
+//   });
+
+//   // thành công .then(callback funtion) | thất bại .catch(callback funtion)
+//   promise
+//     .then((res) => {
+//       console.log(res.data.content);
+//       renderDataProductById(res.data.content);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// }

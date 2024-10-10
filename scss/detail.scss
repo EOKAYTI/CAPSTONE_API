@@ -1,8 +1,4 @@
-* {
-  font-family: "Roboto", sans-serif;
-}
 $fs-color-word: black;
-
 //--------HEADER--------
 header {
   nav.navbar {
@@ -35,40 +31,12 @@ header {
     }
   }
 }
-
-//--------SLIDER--------
-.slider {
-  .carousel-inner {
-    .carousel-item {
-      height: 60vh;
-    }
-  }
-}
-
-// --------CATEGORY--------
-.category {
-  margin: 50px 0;
-  .category_group {
-    display: flex;
-    justify-content: space-evenly;
-    .category_item {
-      padding: 30px 50px;
-      font-weight: 55;
-      background-color: #000;
-      border-radius: 8px;
-
-      h3 {
-        color: white;
-      }
-    }
-  }
-}
-
-// --------PRODUCT--------
+// --------DETAIL PRODUCT--------
 .product {
+  margin-bottom: 200px;
   .product_item {
     .product_img {
-      height: 300px;
+      height: 500px;
       padding: 20px;
       display: flex;
       justify-content: center;
@@ -99,16 +67,6 @@ header {
     }
   }
 }
-
-// --------BANNER--------
-.banner {
-  background-image: url("./../img/banner_1.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-}
-
 // --------FOOTER--------
 footer {
   margin: 50px 0;
