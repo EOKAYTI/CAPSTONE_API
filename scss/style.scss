@@ -45,27 +45,9 @@ header {
   }
 }
 
-// --------CATEGORY--------
-.category {
-  margin: 50px 0;
-  .category_group {
-    display: flex;
-    justify-content: space-evenly;
-    .category_item {
-      padding: 30px 50px;
-      font-weight: 55;
-      background-color: #000;
-      border-radius: 8px;
-
-      h3 {
-        color: white;
-      }
-    }
-  }
-}
-
 // --------PRODUCT--------
 .product {
+  margin-top: 50px;
   .product_item {
     .product_img {
       height: 300px;
@@ -78,23 +60,34 @@ header {
       border-radius: 12px;
       margin-bottom: 10px;
 
-      img {
-        width: 100%;
+      a {
+        img {
+          width: 100%;
+        }
       }
     }
 
     .product_content {
-      h6 {
+      text-align: center;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
         transition: all 0.5s;
+
         &:hover {
           cursor: pointer;
-          color: #0a58ca;
+          color: red;
         }
       }
       p {
+        color: gray;
       }
       .product_price {
         font-weight: bold;
+        color: red;
       }
     }
   }

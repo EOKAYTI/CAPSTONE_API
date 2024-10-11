@@ -43,12 +43,12 @@ function renderDataProduct(arr) {
     <div class="col-3">
         <div class="product_item">
             <div class="product_img">
-            <a href="./../html/detail.html?id=${id}"><img src=${image} alt="${name}" /></a>
+                <a href="./../html/detail.html?id=${id}"><img src=${image} alt="${name}" /></a>
             </div>
             <div class="product_content">
-                <a href="./../html/detail.html?id=${id}">
-                  <h6>${name}</h6>
+                <a href="./../html/detail.html?id=${id}">${name}
                 </a>
+                <p>${shortDescription}</p>
                 <p class="product_price">${price} $</p>
             </div>
         </div>
@@ -57,3 +57,18 @@ function renderDataProduct(arr) {
   }
   document.getElementById("add").innerHTML = content;
 }
+
+// Lấy tất cả các thẻ <a> trong menu
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+// Duyệt qua từng thẻ <a>
+navLinks.forEach((link) => {
+  // Bắt sự kiện click cho từng thẻ <a>
+  link.addEventListener("click", function (event) {
+    // Xóa lớp active của tất cả các thẻ <a> khác
+    navLinks.forEach((link) => link.classList.remove("active"));
+
+    // Thêm lớp active vào thẻ <a> vừa được click
+    this.classList.add("active");
+  });
+});

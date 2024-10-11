@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header nav.navbar .container-fluid .navbar-collapse ul li {
   margin: 0 30px;
 }
@@ -16,6 +17,10 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
 
 .product {
   margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
 }
 .product .product_item .product_img {
   height: 500px;
@@ -27,19 +32,87 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
   border: solid 1px #f0eeee;
   border-radius: 12px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 .product .product_item .product_img img {
   width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
-.product .product_item .product_content h6 {
-  transition: all 0.5s;
+.product .product_item .product_img:hover {
+  transform: scale(1.05); /* Tăng kích thước khi hover */
 }
-.product .product_item .product_content h6:hover {
-  cursor: pointer;
-  color: #0a58ca;
+.product .product_content {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #f0eeee;
+  border-radius: 12px;
 }
-.product .product_item .product_content .product_price {
+.product .product_content h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
   font-weight: bold;
+}
+.product .product_content .product_brand {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+.product .product_content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 15px;
+}
+.product .product_content .sizes {
+  margin-bottom: 15px;
+}
+.product .product_content .sizes p {
+  font-weight: bold;
+}
+.product .product_content .sizes .size_options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.product .product_content .sizes .size_options .size_option {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.product .product_content .sizes .size_options .size_option:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+.product .product_content .product_price {
+  font-weight: 700;
+  color: #ea232d;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.product .product_content .btn_add_to_cart {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.product .product_content .btn_add_to_cart:hover {
+  background-color: #ea232d;
+  transform: scale(1.05);
 }
 
 footer {

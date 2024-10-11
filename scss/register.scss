@@ -1,0 +1,163 @@
+$fs-color-word: black;
+//--------HEADER--------
+header {
+  nav.navbar {
+    .container-fluid {
+      .navbar-brand {
+      }
+      button {
+      }
+      .navbar-collapse {
+        ul {
+          li {
+            margin: 0 30px;
+            a {
+              font-size: 20px;
+            }
+          }
+          li.nav_group {
+            display: flex;
+            align-items: center;
+            a.bar {
+              margin-left: 15px;
+              border-left: 1px solid rgba(0, 0, 0, 0.1);
+              height: 30px;
+              //   position: relative;
+              //   vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// --------REGISTER--------
+.register {
+  background-color: #f8f9fa; // Màu nền nhạt
+  padding: 50px 0; // Padding cho section
+  border-radius: 12px; // Bo góc cho khung
+
+  input {
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px; // Khoảng cách dưới tiêu đề
+    text-align: center; // Căn giữa tiêu đề
+  }
+
+  .form-label {
+    font-weight: bold; // Đậm cho tiêu đề input
+    color: #555;
+  }
+
+  .form-control {
+    border: 1px solid #ced4da; // Đường viền của input
+    border-radius: 8px; // Bo góc cho ô nhập liệu
+    transition: border-color 0.3s; // Hiệu ứng chuyển màu
+
+    &:focus {
+      border-color: #007bff; // Đổi màu khi focus
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); // Hiệu ứng đổ bóng
+    }
+  }
+
+  .gender-selection {
+    margin-top: 10px; // Khoảng cách trên
+
+    label {
+      font-weight: bold; // Đậm cho nhãn giới tính
+      display: block; // Hiển thị như block để nằm trên cùng
+      margin-bottom: 5px; // Khoảng cách dưới nhãn giới tính
+
+      input {
+        margin-top: 15px;
+        margin-right: 5px; // Khoảng cách giữa radio và text
+      }
+    }
+
+    .radio-buttons {
+      display: flex; // Sử dụng flexbox cho nút radio
+      justify-content: flex-start; // Căn đều khoảng cách giữa các radio
+
+      label {
+        margin-right: 20px; // Khoảng cách giữa các nhãn radio
+        display: flex;
+        align-items: center; // Căn giữa cho radio và text
+      }
+    }
+  }
+
+  .btn-primary {
+    margin-top: 20px;
+    background-color: #007bff; // Màu nền của nút
+    border: none; // Bỏ đường viền
+    border-radius: 8px; // Bo góc cho nút
+    padding: 10px 20px; // Đệm cho nút
+    transition: background-color 0.3s; // Hiệu ứng chuyển màu
+
+    &:hover {
+      background-color: #0056b3; // Đổi màu khi hover
+    }
+  }
+
+  .btn-small {
+    font-size: 14px; // Kích thước chữ nhỏ hơn cho nút
+    padding: 8px 16px; // Padding cho nút nhỏ
+  }
+}
+
+// --------FOOTER--------
+footer {
+  margin: 50px 0;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+  }
+  a {
+    text-decoration: none;
+    color: $fs-color-word;
+  }
+  .footer_contact {
+    nav {
+      ul {
+        li {
+          a {
+            i {
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_right {
+    display: flex;
+    justify-content: space-around;
+    .footer_about {
+      li {
+        margin: 20px 0;
+        a {
+          transition: all 0.5s;
+          &:hover {
+            color: #0a58ca;
+          }
+        }
+      }
+    }
+    .footer_support {
+      li {
+        margin: 20px 0;
+        a {
+          transition: all 0.5s;
+          &:hover {
+            color: #0a58ca;
+          }
+        }
+      }
+    }
+  }
+}
