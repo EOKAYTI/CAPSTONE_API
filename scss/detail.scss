@@ -59,10 +59,10 @@ header {
         object-fit: cover;
         border-radius: 12px;
         transition: transform 0.3s ease;
-      }
-
-      &:hover {
-        transform: scale(1.05); /* Tăng kích thước khi hover */
+        &:hover {
+          transform: scale(1.05); /* Tăng kích thước khi hover */
+          cursor: pointer;
+        }
       }
     }
   }

@@ -42,8 +42,9 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
-.product .product_item .product_img:hover {
+.product .product_item .product_img img:hover {
   transform: scale(1.05); /* Tăng kích thước khi hover */
+  cursor: pointer;
 }
 .product .product_content {
   padding: 20px;

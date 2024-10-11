@@ -63,6 +63,11 @@ header {
       a {
         img {
           width: 100%;
+          transition: all 0.5s;
+          &:hover {
+            transform: scale(1.15); /* Tăng kích thước khi hover */
+            cursor: pointer;
+          }
         }
       }
     }
@@ -70,6 +75,7 @@ header {
     .product_content {
       text-align: center;
       a {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
         text-decoration: none;
         text-transform: uppercase;
         color: black;
@@ -84,9 +90,13 @@ header {
       }
       p {
         color: gray;
+        margin-top: 5px;
+        font-size: 15px;
+        text-transform: uppercase;
       }
       .product_price {
         font-weight: bold;
+        font-size: 20px;
         color: red;
       }
     }
@@ -154,4 +164,22 @@ footer {
       }
     }
   }
+}
+
+/* BACK TO TOP */
+.back_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: red;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }

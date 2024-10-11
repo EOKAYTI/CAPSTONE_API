@@ -41,38 +41,6 @@ function renderDataProductById(sanPham) {
     categories,
     relatedProducts,
   } = sanPham;
-  // const content = `
-  //   <div class="col-6">
-  //       <div class="product_item">
-  //           <div class="product_img">
-  //               <img src="${image}" alt="${name}" />
-  //           </div>
-  //       </div>
-  //   </div>
-  //   <div class="col-6">
-  //       <div class="product_content">
-  //           <h2>${name}</h2>
-  //           <p>Thương hiệu: ${categories}</p>
-  //           <p>${shortDescription}</p>
-  //           <p>Kích thước: ${size}</p>
-  //           <p class="product_price">${price} $</p>
-  //           <button>Thêm vào giỏ hàng</button>
-  //       </div>
-  //   </div>
-  // `;
-  // const {
-  //   id,
-  //   name,
-  //   alias,
-  //   price,
-  //   feature,
-  //   size,
-  //   description,
-  //   quantity,
-  //   shortDescription,
-  //   image,
-  //   categories,
-  // } = sanPham;
 
   // Chuyển đổi categories để lấy tên thương hiệu
   const brand =
@@ -90,9 +58,9 @@ function renderDataProductById(sanPham) {
     <div class="product_content">
       <h2>${name}</h2>
       <p class="product_brand">Thương hiệu: ${brand}</p>
-      <p>${shortDescription}</p>
+      <p>Mô tả: ${shortDescription}</p>
       <div class="sizes">
-        <p>Kích thước:</p>
+        <p>Kích thước</p>
         <div class="size_options">
           ${size.map((s) => `<span class="size_option">${s}</span>`).join("")}
         </div>

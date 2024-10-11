@@ -41,7 +41,7 @@ function renderDataProduct(arr) {
     } = sanPham;
     content += `
     <div class="col-3">
-        <div class="product_item">
+        <div class="product_item animate__animated animate__zoomInUp">
             <div class="product_img">
                 <a href="./../html/detail.html?id=${id}"><img src=${image} alt="${name}" /></a>
             </div>
@@ -58,6 +58,7 @@ function renderDataProduct(arr) {
   document.getElementById("add").innerHTML = content;
 }
 
+// Xử lý class ACTIVE
 // Lấy tất cả các thẻ <a> trong menu
 const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
