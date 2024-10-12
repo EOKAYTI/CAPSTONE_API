@@ -47,14 +47,14 @@ function renderDataProductById(sanPham) {
     categories.length > 0 ? categories[0].category : "Chưa xác định";
 
   const content = `
-  <div class="col-6">
+  <div class="col-12 col-lg-6">
     <div class="product_item">
       <div class="product_img">
         <img src="${image}" alt="${name}" />
       </div>
     </div>
   </div>
-  <div class="col-6">
+  <div class="col-12 col-lg-6">
     <div class="product_content">
       <h2>${name}</h2>
       <p class="product_brand">Thương hiệu: ${brand}</p>

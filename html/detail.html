@@ -108,30 +108,27 @@
     <section class="product">
       <div class="container">
         <div class="row" id="product-detail">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="product_item">
               <div class="product_img">
-                <img src="./../img/p1.png" alt="" />
+                <img src="${image}" alt="${name}" />
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="product_content">
-              <h2>Giày Nike Air Zoom</h2>
-              <p>Giày Nike Zoom Vapor Pro 2 HC ‘White’ DR6191-101</p>
-              <p class="product_price">3,500,000 ₫</p>
-              <p>Kích thước</p>
-              <p>[40],[41],[42]</p>
-              <div class="product_banner">
-                <div class="row">
-                  <div class="col-12">
-                    <p>THÊM VÀO GIỎ HÀNG</p>
-                  </div>
-                  <div class="col-4">MUA NGAY</div>
-                  <div class="col-4">TRẢ GÓP QUA THẺ</div>
-                  <div class="col-4">MUA NGAY - TRẢ SAU</div>
+              <h2>${name}</h2>
+              <p class="product_brand">Thương hiệu: ${brand}</p>
+              <p>Mô tả: ${shortDescription}</p>
+              <div class="sizes">
+                <p>Kích thước</p>
+                <div class="size_options">
+                  ${size.map((s) => `<span class="size_option">${s}</span
+                  >`).join("")}
                 </div>
               </div>
+              <p class="product_price">${price} $</p>
+              <button class="btn_add_to_cart">Thêm vào giỏ hàng</button>
             </div>
           </div>
         </div>
@@ -142,7 +139,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="footer_contact">
               <img src="./../img/logo.webp" alt="" />
               <p class="mt-2">
@@ -187,9 +184,9 @@
               </nav>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="footer_right">
-              <div class="col-3">
+              <div class="col-6">
                 <div class="footer_about">
                   <h5>VỀ CHÚNG TÔI</h5>
                   <nav>
@@ -203,7 +200,7 @@
                   </nav>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6">
                 <div class="footer_support">
                   <h5>HỖ TRỢ KHÁCH HÀNG</h5>
                   <nav>
@@ -222,6 +219,7 @@
         </div>
       </div>
     </footer>
+
     <!-- COPY RIGHT -->
     <section class="copy_right">
       <div class="row p-4 bg-dark text-white text-center">

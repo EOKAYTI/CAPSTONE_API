@@ -34,6 +34,9 @@ header {
 
 // --------DETAIL PRODUCT--------
 .product {
+  @media screen and (max-width: 576px) {
+    margin-bottom: 10px;
+  }
   margin-bottom: 200px;
   display: flex;
   justify-content: center;
@@ -151,7 +154,7 @@ header {
 
 // --------FOOTER--------
 footer {
-  margin: 50px 0;
+  margin: 0;
   ul {
     list-style-type: none;
     padding-left: 0;
@@ -200,5 +203,14 @@ footer {
         }
       }
     }
+  }
+}
+
+// --------COPY RIGHT--------
+.copy_right {
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+  p {
   }
 }

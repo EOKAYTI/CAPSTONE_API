@@ -50,6 +50,9 @@ header {
   margin-top: 50px;
   .product_item {
     .product_img {
+      @media screen and (max-width: 576px) {
+        height: 400px;
+      }
       height: 300px;
       padding: 20px;
       display: flex;
@@ -166,8 +169,19 @@ footer {
   }
 }
 
+// --------COPY RIGHT--------
+.copy_right {
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+  p {
+  }
+}
 /* BACK TO TOP */
 .back_to_top {
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
   position: fixed;
   bottom: 30px;
   right: 30px;

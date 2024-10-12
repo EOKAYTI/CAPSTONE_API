@@ -113,4 +113,10 @@ footer .footer_right .footer_support li a {
 }
 footer .footer_right .footer_support li a:hover {
   color: #0a58ca;
+}
+
+@media screen and (max-width: 576px) {
+  .copy_right {
+    display: none;
+  }
 }/*# sourceMappingURL=register.css.map */

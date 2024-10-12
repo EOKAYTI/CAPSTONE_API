@@ -40,7 +40,7 @@ function renderDataProduct(arr) {
       image,
     } = sanPham;
     content += `
-    <div class="col-3">
+    <div class="col-12 col-sm-6 col-lg-3">
         <div class="product_item animate__animated animate__zoomInUp">
             <div class="product_img">
                 <a href="./../html/detail.html?id=${id}"><img src=${image} alt="${name}" /></a>

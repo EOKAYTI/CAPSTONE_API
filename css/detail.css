@@ -22,6 +22,11 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
   align-items: flex-start;
   gap: 20px;
 }
+@media screen and (max-width: 576px) {
+  .product {
+    margin-bottom: 10px;
+  }
+}
 .product .product_item .product_img {
   height: 500px;
   padding: 20px;
@@ -117,7 +122,7 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
 }
 
 footer {
-  margin: 50px 0;
+  margin: 0;
 }
 footer ul {
   list-style-type: none;
@@ -151,4 +156,10 @@ footer .footer_right .footer_support li a {
 }
 footer .footer_right .footer_support li a:hover {
   color: #0a58ca;
+}
+
+@media screen and (max-width: 576px) {
+  .copy_right {
+    display: none;
+  }
 }/*# sourceMappingURL=detail.css.map */

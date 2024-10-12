@@ -37,6 +37,11 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
   border-radius: 12px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 576px) {
+  .product .product_item .product_img {
+    height: 400px;
+  }
+}
 .product .product_item .product_img a img {
   width: 100%;
   transition: all 0.5s;
@@ -118,6 +123,11 @@ footer .footer_right .footer_support li a:hover {
   color: #0a58ca;
 }
 
+@media screen and (max-width: 576px) {
+  .copy_right {
+    display: none;
+  }
+}
 /* BACK TO TOP */
 .back_to_top {
   position: fixed;
@@ -129,6 +139,11 @@ footer .footer_right .footer_support li a:hover {
   border-radius: 8px;
   opacity: 0;
   visibility: hidden;
+}
+@media screen and (max-width: 576px) {
+  .back_to_top {
+    display: none;
+  }
 }
 
 body .cd-top--is-visible {

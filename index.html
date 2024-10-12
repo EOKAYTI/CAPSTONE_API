@@ -171,17 +171,18 @@
       <div class="container">
         <h3>TẤT CẢ SẢN PHẨM</h3>
         <div class="row" id="add">
+          <!-- col-12 col-md-6 col-lg-3 -->
           <div class="col-3">
-            <div class="product_item">
+            <div class="product_item animate__animated animate__zoomInUp">
               <div class="product_img">
-                <a href=""><img src="./img/p1.png" alt="" /></a>
+                <a href="./../html/detail.html?id=${id}"
+                  ><img src="${image}" alt="${name}"
+                /></a>
               </div>
               <div class="product_content">
-                <a href="">
-                  <h6 id="tenSanPham">Giày Nike Air Zoom</h6>
-                </a>
-                <p class="product_price">3,500,000 ₫</p>
-                <a href="./html/detail.html">Xem chi tiết</a>
+                <a href="./../html/detail.html?id=${id}">${name} </a>
+                <p>${shortDescription}</p>
+                <p class="product_price">${price} $</p>
               </div>
             </div>
           </div>
@@ -191,11 +192,12 @@
 
     <!-- BANNER -->
     <section class="banner"></section>
+
     <!-- FOOTER -->
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="footer_contact">
               <img src="./img/logo.webp" alt="" />
               <p class="mt-2">
@@ -240,9 +242,9 @@
               </nav>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="footer_right">
-              <div class="col-3">
+              <div class="col-6">
                 <div class="footer_about">
                   <h5>VỀ CHÚNG TÔI</h5>
                   <nav>
@@ -256,7 +258,7 @@
                   </nav>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6">
                 <div class="footer_support">
                   <h5>HỖ TRỢ KHÁCH HÀNG</h5>
                   <nav>
@@ -275,6 +277,7 @@
         </div>
       </div>
     </footer>
+
     <!-- COPY RIGHT -->
     <section class="copy_right">
       <div class="row p-4 bg-dark text-white text-center">
