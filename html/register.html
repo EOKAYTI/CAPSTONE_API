@@ -117,60 +117,91 @@
           <div class="row">
             <div class="col-12 col-lg-6">
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Vui lòng nhập email !"
-                />
-                <label for="passWord" class="form-label">Mật khẩu</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="passWord"
-                  placeholder="Vui lòng nhập mật khẩu !"
-                />
-                <label for="passWordConfirm" class="form-label"
-                  >Xác nhận mật khẩu</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="passWordConfirm"
-                  placeholder="Nhập lại mật khẩu của bạn !"
-                />
+                <div class="input_group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Vui lòng nhập email !"
+                    data-validation="email"
+                  />
+                  <span id="spanEmail" class="text-danger"></span>
+                </div>
+                <div class="input_group">
+                  <label for="passWord" class="form-label">Mật khẩu</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passWord"
+                    placeholder="Vui lòng nhập mật khẩu !"
+                    data-validation="minMax"
+                    data-min="6"
+                    data-max="10"
+                  />
+                  <span id="spanMatKhau" class="text-danger"></span>
+                </div>
+                <div class="input_group">
+                  <label for="passWordConfirm" class="form-label"
+                    >Xác nhận mật khẩu</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passWordConfirm"
+                    placeholder="Nhập lại mật khẩu của bạn !"
+                  />
+                  <span id="spanXacNhanMatKhau" class="text-danger"></span>
+                </div>
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="mb-3">
-                <label for="name" class="form-label">Họ và tên</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Vui lòng nhập tên của bạn !"
-                />
-                <label for="phone" class="form-label">Số điện thoại</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  placeholder="Vui lòng nhập số điện thoại của bạn !"
-                />
-
-                <div class="gender-selection">
+                <div class="input_group">
+                  <label for="name" class="form-label">Họ và tên</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Vui lòng nhập tên của bạn !"
+                  />
+                  <span id="spanHoTen" class="text-danger"></span>
+                </div>
+                <div class="input_group">
+                  <label for="phone" class="form-label">Số điện thoại</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Vui lòng nhập số điện thoại của bạn !"
+                  />
+                  <span id="spanSDT" class="text-danger"></span>
+                </div>
+                <div class="input_group">
                   <label class="form-label d-block">Giới tính:</label>
-                  <div class="radio-buttons">
+                  <div class="radio-buttons" id="gender">
                     <label>
-                      <input type="radio" name="gender" value="male" /> Male
+                      <input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                        id="gender1"
+                        checked
+                      />
+                      Male
                     </label>
                     <label>
-                      <input type="radio" name="gender" value="female" /> Female
+                      <input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        id="gender2"
+                      />
+                      Female
                     </label>
+                    <span id="spanGioiTinh" class="text-danger"></span>
                   </div>
                 </div>
-
                 <div class="submit">
                   <button
                     type="submit"
@@ -299,6 +330,15 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
+
+    <!-- FILE UTILS -->
+    <script src="./../utils/utils.js"></script>
+
+    <!-- FILE VALIDATION -->
+    <script src="./../validation/validation.js"></script>
+
+    <!-- FILE MODEL -->
+    <script src="./../models/NguoiDung.js"></script>
 
     <!-- FILE JS -->
     <script src="./../js/register.js"></script>
