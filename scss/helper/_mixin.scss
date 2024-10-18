@@ -1,0 +1,10 @@
+@mixin aSelector($text-decoration: none, $color: $color-word-1) {
+  text-decoration: $text-decoration;
+  color: $color;
+  transition: all 0.5s;
+
+  &:hover {
+    color: $color;
+    cursor: pointer;
+  }
+}

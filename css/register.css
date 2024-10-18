@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 header nav.navbar .container-fluid .navbar-collapse ul li {
   margin: 0 30px;
 }

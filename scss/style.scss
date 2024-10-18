@@ -1,7 +1,6 @@
-* {
-  font-family: "Roboto", sans-serif;
-}
-$fs-color-word: black;
+@import "./base/base";
+@import "./helper/variable";
+@import "./helper/mixin";
 
 //--------HEADER--------
 header {
@@ -78,16 +77,13 @@ header {
     .product_content {
       text-align: center;
       a {
+        @include aSelector();
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-        text-decoration: none;
         text-transform: uppercase;
-        color: black;
         font-weight: bold;
         font-size: 20px;
-        transition: all 0.5s;
 
         &:hover {
-          cursor: pointer;
           color: red;
         }
       }
@@ -100,7 +96,7 @@ header {
       .product_price {
         font-weight: bold;
         font-size: 20px;
-        color: red;
+        color: $color-price;
       }
     }
   }
@@ -125,8 +121,7 @@ footer {
   li {
   }
   a {
-    text-decoration: none;
-    color: $fs-color-word;
+    @include aSelector();
   }
   .footer_contact {
     nav {
@@ -177,6 +172,7 @@ footer {
   p {
   }
 }
+
 /* BACK TO TOP */
 .back_to_top {
   @media screen and (max-width: 576px) {

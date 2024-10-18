@@ -54,16 +54,19 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
   text-align: center;
 }
 .product .product_item .product_content a {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  text-transform: uppercase;
   color: black;
+  transition: all 0.5s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
-  transition: all 0.5s;
 }
 .product .product_item .product_content a:hover {
+  color: black;
   cursor: pointer;
+}
+.product .product_item .product_content a:hover {
   color: red;
 }
 .product .product_item .product_content p {
@@ -96,6 +99,11 @@ footer ul {
 footer a {
   text-decoration: none;
   color: black;
+  transition: all 0.5s;
+}
+footer a:hover {
+  color: black;
+  cursor: pointer;
 }
 footer .footer_contact nav ul li a i {
   padding-right: 15px;

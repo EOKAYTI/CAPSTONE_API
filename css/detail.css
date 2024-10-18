@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 header nav.navbar .container-fluid .navbar-collapse ul li {
   margin: 0 30px;
 }
@@ -43,7 +47,7 @@ header nav.navbar .container-fluid .navbar-collapse ul li.nav_group a.bar {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
@@ -168,4 +172,4 @@ footer .footer_right .footer_support li a:hover {
   .copy_right {
     display: none;
   }
-} /*# sourceMappingURL=detail.css.map */
+}/*# sourceMappingURL=detail.css.map */

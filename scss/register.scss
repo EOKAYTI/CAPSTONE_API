@@ -1,4 +1,6 @@
-$fs-color-word: black;
+@import "./base/base";
+@import "./helper/variable";
+
 //--------HEADER--------
 header {
   nav.navbar {
